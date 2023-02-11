@@ -1,7 +1,7 @@
 export default function Footer() {
     return (
-        <footer>
-            Gabriel Stoppa | @2023
+        <footer className="container">
+            { "<Coded by Gabriel Stoppa / Powered by React / @ 2023>" }
         </footer>
     )
 }

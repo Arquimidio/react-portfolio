@@ -2,9 +2,9 @@ import Socials from "./Socials"
 
 export default function Navbar() {
     return (
-        <nav>
+        <nav className="navbar container">
             <div>
-                Gabriel (logo)
+                Gabriel Stoppa
             </div>
             <ul>
                 <li>Home</li>
@@ -12,7 +12,6 @@ export default function Navbar() {
                 <li>Contact</li>
                 <li>Readings</li>
                 <li>Posts</li>
-                <li>Language</li>
             </ul>
             <Socials />
         </nav>

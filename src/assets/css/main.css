@@ -1,3 +1,39 @@
 * {
     box-sizing: border-box;
 }
+
+#root {
+    --base: 1rem;
+    --small: calc(var(--base) * 1.25);
+    --medium: calc(var(--small) * 1.25);
+    --big: calc(var(--medium) * 1.25);
+}
+
+body {
+    font-family: sans-serif;
+}
+
+ul {
+    display:  flex;
+    gap: var(--small);
+    align-items: center;
+}
+
+article {
+    padding: var(--medium) 0; 
+}
+
+.container {
+    width: 95%;
+    max-width: 1300px;
+    margin: auto;
+  }
+  
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--base) 0;
+}
+
