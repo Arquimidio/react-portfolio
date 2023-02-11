@@ -1,0 +1,35 @@
+@media (min-width: 1000px) {
+
+    .nav-links,
+    .socials {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .adaptable-navigation {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .opened-menu {
+        position: static;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        transform: none;
+        padding: 0;
+        gap: 0;
+        border-radius: 0;
+        overflow: hidden;
+    }
+
+    .nav-links {
+        margin-left: 25%;
+    }
+
+    .hide-on-desktop {
+        display: none;
+    }    
+}

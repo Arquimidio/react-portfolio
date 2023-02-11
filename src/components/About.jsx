@@ -1,6 +1,6 @@
 export default function About() {
     return (
-        <article>
+        <article className="flex-adapt">
             <h2>Sobre mim</h2>
             <p>
                 Sou um desenvolvedor Full-Stack atualmente morando em Curitiba, formado em Direito e, no momento,

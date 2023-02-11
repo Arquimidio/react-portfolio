@@ -5,11 +5,11 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp"
 
 export default function Socials() {
     return (
-        <ul>
-            <li><LinkedInIcon /></li>
-            <li><GitHubIcon /></li>
-            <li><TwitterIcon /></li>
-            <li><WhatsAppIcon /></li>
+        <ul className="socials">
+            <a href="#"><LinkedInIcon /></a>
+            <a href="#"><GitHubIcon /></a>
+            <a href="#"><TwitterIcon /></a>
+            <a href="#"><WhatsAppIcon /></a>
         </ul>
     )
 }

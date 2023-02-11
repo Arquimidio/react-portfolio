@@ -4,6 +4,9 @@
 
 #root {
     --base: 1rem;
+    --sub-big: calc(var(--base) * 0.25);
+    --sub-medium: calc(var(--sub-big) * 1.25);
+    --sub-small: calc(var(--sub-medium) * 1.25);
     --small: calc(var(--base) * 1.25);
     --medium: calc(var(--small) * 1.25);
     --big: calc(var(--medium) * 1.25);
@@ -11,6 +14,7 @@
 
 body {
     font-family: sans-serif;
+    overflow-x: hidden;
 }
 
 ul {
@@ -27,13 +31,50 @@ article {
     width: 95%;
     max-width: 1300px;
     margin: auto;
-  }
+}
+
+.logo {
+    min-width: fit-content;
+}
   
 
 .navbar {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: var(--base) 0;
 }
 
+.nav-links,
+.socials {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.adaptable-navigation {
+    display: none;
+}
+
+.flex-adapt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: var(--base);
+}
+
+.opened-menu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    gap: var(--base);
+    background-color: red;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    padding: var(--base);
+    border-radius: var(--sub-small);
+}
