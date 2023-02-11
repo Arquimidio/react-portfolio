@@ -9,7 +9,7 @@ export default function About() {
             <p>
                 Aprendi o básico de lógica e desenvolvimento web lááá em 2012, mas entrei realmente de cabeça
                 no mundo da programação no início de 2021, quando vi a necessidade de um programa para automatizar
-                parte do trabalho de prática jurídica na faculdade de Direito! 
+                os trabalhos de prática jurídica da faculdade! 
             </p>
             <p>
                 Desde então, venho aprimorando minhas habilidades nessa área que tanto amo, sempre aprendendo

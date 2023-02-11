@@ -4,7 +4,7 @@ export default function Navbar() {
     return (
         <nav>
             <div>
-                Gabriel
+                Gabriel (logo)
             </div>
             <ul>
                 <li>Home</li>
