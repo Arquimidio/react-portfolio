@@ -1,6 +1,7 @@
 import AboutGuy from "../assets/images/about-guy.png";
 import { Button } from "@mui/material";
-import TwitterIcon from '@mui/icons-material/Twitter';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import HandshakeIcon from '@mui/icons-material/Handshake';
 
 export default function About() {
     return (
@@ -12,21 +13,26 @@ export default function About() {
                 <div className="flex-adapt">
                     <h2 className="section-heading">About me</h2>
                     <p>
-                        Sou um desenvolvedor Full-Stack atualmente morando em Curitiba, formado em Direito e, no momento,
-                        cursando Engenharia de Software na UNINTER.
+                        I'm a Full-stack developer currently living at Curitiba (Brasil's Sillicon Valley :P), having a Bachelor of Laws degree and studying for a Software Engineer Degree ar UNINTER.
                     </p>
                     <p>
-                        Aprendi o básico de lógica e desenvolvimento web lááá em 2012, mas entrei realmente de cabeça
-                        no mundo da programação no início de 2021, quando vi a necessidade de um programa para automatizar
-                        os trabalhos de prática jurídica da faculdade! 
+                        I know the basics of logic and web development since 2012, but i've really started to dig deep into the development world january 2021, when i saw the need for a software to automate my work at the college's law practice classes! 
                     </p>
                     <p>
-                        Desde então, venho aprimorando minhas habilidades nessa área que tanto amo, sempre aprendendo
-                        novas tecnologias e testando meus conhecimentos!
+                        Since then, i've been improving my software development skills, always learning new technologies and testing my knowledge!
                     </p>
-                    <Button variant="contained" className="btn" startIcon={<TwitterIcon />}>
-                        More
-                    </Button>
+                    <div className="flex-side">
+                        <Button 
+                            className="btn"
+                            variant="contained"
+                            startIcon={<HandshakeIcon />}
+                        >
+                            Let's Work Together
+                        </Button>
+                        <Button variant="outlined" className="btn" startIcon={<GitHubIcon />}>
+                            More
+                        </Button>
+                    </div>
                 </div>
             </article>
         </div>

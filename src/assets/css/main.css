@@ -47,7 +47,7 @@
   
 
 #root {
-    --main-color: rgb(50, 77, 230);
+    --main-color: #324de6;
     --background: #121216;
     --background-secondary: #1a1a1d;
     --text-primary: #d6d6dc;
@@ -124,7 +124,7 @@ h3 {
 }
 
 article {
-    padding: var(--medium) 0; 
+    padding: var(--very-big) 0; 
 }
 
 .image {
@@ -170,13 +170,14 @@ article {
 .navbar {
     position: relative;
     background-color: var(--background-secondary);
+    font-size: var(--base);
 }
 
 .navbar > .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: var(--small) 0;
+    padding: var(--base) 0;
 }
 
 .nav-links,
@@ -208,6 +209,39 @@ article {
 
 .moving-hero {
     order: -1;
+}
+
+.tech-stack {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--big);
+}
+
+.skill {
+    position: relative;
+    display: flex;
+    font-size: var(--small);
+    align-items: center;
+    gap: var(--sub-small);
+    color: var(--text-primary);
+    font-weight: bolder;
+    background-color: var(--background-secondary);
+    padding: var(--small);
+    border-radius: var(--sub-big);
+    border: 1px solid var(--light-border);
+    overflow: hidden;
+}
+
+.bg-img {
+    position: absolute;
+    right: 5%;
+    top: 15%;
+    width: 20%;
+    opacity: 0.05;
+}
+
+.bg-img img {
+    width: 100%;
 }
 
 .adaptable-navigation {
@@ -306,9 +340,6 @@ article {
   }
 
   .btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
   }
 

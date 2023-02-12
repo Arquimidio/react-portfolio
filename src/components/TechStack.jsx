@@ -1,25 +1,44 @@
 import { Button } from "@mui/material"
+import Skill from "./Skill"
+import HTMLIcon from "../assets/icons/html.png"
+import CSSIcon from "../assets/icons/css.png"
+import JSIcon from "../assets/icons/javascript.png"
+import ReactIcon from "../assets/icons/react.png"
+import NodeIcon from "../assets/icons/node.png"
+import ExpressIcon from "../assets/icons/express.png"
+import MongooseIcon from "../assets/icons/mongoose.png"
+import SQLITEIcon from "../assets/icons/sqlite.svg"
 
 export default function TechStack() {
     return (
-        <article className="container">
-            <h2>Habilidades</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Javascript</li>
-                <li>React</li>
-                <li>Node</li>
-                <li>Express</li>
-                <li>Mongoose</li>
-                <li>SQLite</li>
+        <article className="container flex-adapt">
+            <h2 className="section-heading">Tech Stack</h2>
+            <ul className="tech-stack">
+                <li>
+                    <Skill icon={HTMLIcon}>HTML</Skill>
+                </li>
+                <li>
+                    <Skill icon={CSSIcon}>CSS</Skill>
+                </li>
+                <li>
+                    <Skill icon={JSIcon}>Javascript</Skill>
+                </li>
+                <li>
+                    <Skill icon={ReactIcon}>React</Skill>
+                </li>
+                <li>
+                    <Skill icon={NodeIcon}>Node</Skill>
+                </li>
+                <li>
+                    <Skill icon={ExpressIcon}>Express</Skill>
+                </li>
+                <li>
+                    <Skill icon={MongooseIcon}>Mongoose</Skill>
+                </li>
+                <li>
+                    <Skill icon={SQLITEIcon}>SQLite</Skill>
+                </li>
             </ul>
-            <Button 
-                className="btn"
-                variant="contained"
-            >
-                Let's Work Together
-            </Button>
         </article>
 
     )
