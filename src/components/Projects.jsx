@@ -2,7 +2,7 @@ import ProjectThumb from "./ProjectThumb"
 
 export default function Projects() {
     return (
-        <section>
+        <section className="container">
             <ul>
                 <li>
                     <ProjectThumb />

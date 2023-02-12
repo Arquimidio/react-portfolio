@@ -6,15 +6,15 @@ export default function Socials() {
     return (
         <ul className="socials">
             <a href="#" className="link-with-icon">
-                <GitHubIcon />
+                <GitHubIcon fontSize="small"/>
                 <span className="hide-on-desktop">Github</span>
             </a>
             <a href="#" className="link-with-icon">
-                <LinkedInIcon />
+                <LinkedInIcon fontSize="small"/>
                 <span className="hide-on-desktop">LinkedIn</span>
             </a>
             <a href="#" className="link-with-icon">
-                <TwitterIcon />
+                <TwitterIcon fontSize="small"/>
                 <span className="hide-on-desktop">Twitter</span>
             </a>
         </ul>

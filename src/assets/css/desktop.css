@@ -6,6 +6,43 @@
         align-items: center;
     }
 
+    .hero {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: revert;
+    }
+
+    .moving-hero {
+        animation: around 10s infinite alternate;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+
+    .timer-container {
+        font-size: var(--medium);
+        width: fit-content;
+        border-radius: var(--sub-small);
+        padding: var(--small);
+    }
+    
+    .time-counter {
+        color: var(--main-color);
+        text-transform: uppercase;
+        font-weight: bolder;
+    }
+    
+    .time-info {
+        padding: var(--sub-big);
+        background-color: var(--background);
+        border-radius: var(--sub-medium);
+    }
+    
+    .time-info + .time-info {
+        margin-left: var(--base);
+    }
+    
     .adaptable-navigation {
         display: flex;
         justify-content: space-between;
@@ -29,7 +66,16 @@
         margin-left: 25%;
     }
 
+    .hide-on-mobile {
+        display: flex;
+    }
+
     .hide-on-desktop {
         display: none;
-    }    
+    }   
+
+    .btn {
+        width: fit-content;
+    }
+    
 }

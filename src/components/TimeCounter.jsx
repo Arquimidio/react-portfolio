@@ -17,6 +17,12 @@ export default function TimeCounter() {
             .join(' ')
     }
 
+    function counterBlocks() {
+        return counterStr
+            .split(' ')
+            .map(block => <span className="time-info">{ block }</span>)
+    }
+
     useEffect(() => {
         const timer = setTimeout(() => {
             setCounterStr(counterDistance());
@@ -28,8 +34,8 @@ export default function TimeCounter() {
     })
 
     return (
-        <div>
-            { counterStr }
+        <div className="time-counter">
+            { counterBlocks() }
         </div>
     )
 }

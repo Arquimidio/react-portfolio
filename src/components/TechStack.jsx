@@ -1,6 +1,6 @@
 export default function TechStack() {
     return (
-        <article>
+        <article className="container">
             <h2>Habilidades</h2>
             <ul>
                 <li>HTML</li>
