@@ -1,0 +1,20 @@
+{
+    "hero": {
+        "title": "Hello, i'm Gabriel Stoppa",
+        "roles": [
+            "Web Developer!",
+            "Software Engineer!",
+            "Front-end!",
+            "Back-end!"
+        ],
+        "welcome": "Welcome to my portfolio site! Here you can find all the info you need about my professional developer life, projects, hobbies, technical readings and a lot of what makes me who i am!"
+    },
+    "about": {
+        "title": "About me",
+        "paragraphs": [
+            "I'm a Full-stack developer currently living at Curitiba - Paraná, Brasil, havin a Bachelor of Laws degree and studying for a Software Engineer Degree ar UNINTER.",
+            "I know the basics of logic and web development since 2012, but i've really started to dig deep into the development world january 2021, when i saw the need of a software to automate my work at the college's law practice classes!",
+            "Since then, i've been improving my software development skills, always learning new technologies and testing my knowledge!"
+        ]
+    }
+}

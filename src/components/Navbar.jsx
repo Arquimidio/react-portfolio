@@ -2,6 +2,7 @@ import Socials from "./Socials"
 import Divider from "./Divider";
 import SegmentIcon from "@mui/icons-material/Segment"
 import { useState } from "react"
+import LogoImage from "../assets/images/full-logo.svg"
 
 export default function Navbar() {
     const [isMenuOpened, setIsMenuOpened] = useState(false);
@@ -13,13 +14,13 @@ export default function Navbar() {
     return (
         <nav className="navbar">
             <div className="container">
-                <div className="logo">
-                    Gabriel Stoppa
+                <div className="image">
+                    <img src={LogoImage}/>
                 </div>
                 <div className={
                     `adaptable-navigation ${isMenuOpened? 'opened-menu' : ''}`
                 }>
-                    <p className="hide-on-desktop">Gabriel Stoppa</p>
+                    <p className="hide-on-desktop">GS</p>
                     <Divider />
                     <ul className="nav-links">
                         <a href="#">Home</a>

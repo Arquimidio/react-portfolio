@@ -6,10 +6,11 @@
         align-items: center;
     }
 
-    .hero {
-        display: grid;
+    .responsive-grid {
         grid-template-columns: repeat(2, 1fr);
-        column-gap: revert;
+        grid-template-rows: 1fr;
+        justify-content: center;
+        align-items: center;
     }
 
     .moving-hero {
@@ -17,14 +18,13 @@
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
+        order: 1;
     }
 
 
     .timer-container {
         font-size: var(--medium);
         width: fit-content;
-        border-radius: var(--sub-small);
-        padding: var(--small);
     }
     
     .time-counter {
@@ -33,11 +33,7 @@
         font-weight: bolder;
     }
     
-    .time-info {
-        padding: var(--sub-big);
-        background-color: var(--background);
-        border-radius: var(--sub-medium);
-    }
+    
     
     .time-info + .time-info {
         margin-left: var(--base);
@@ -60,6 +56,7 @@
         gap: 0;
         border-radius: 0;
         overflow: hidden;
+        border: none;
     }
 
     .nav-links {

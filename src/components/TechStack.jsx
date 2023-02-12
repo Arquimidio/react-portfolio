@@ -1,3 +1,5 @@
+import { Button } from "@mui/material"
+
 export default function TechStack() {
     return (
         <article className="container">
@@ -12,6 +14,12 @@ export default function TechStack() {
                 <li>Mongoose</li>
                 <li>SQLite</li>
             </ul>
+            <Button 
+                className="btn"
+                variant="contained"
+            >
+                Let's Work Together
+            </Button>
         </article>
 
     )

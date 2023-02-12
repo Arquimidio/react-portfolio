@@ -1,0 +1,20 @@
+{
+    "hero": {
+        "title": "Olá, eu sou Gabriel Stoppa",
+        "roles": [
+            "Web Developer!",
+            "Software Engineer!",
+            "Front-end!",
+            "Back-end!"
+        ],
+        "welcome": "Bem-vindo(a) ao meu portfólio! Aqui você pode encontrar todas as informações que precusa sobre a minha vida profissional de desenvolvedor, projetos, hobbies, leituras técnicas e muito do que me faz ser eu!"
+    },
+    "about": {
+        "title": "About me",
+        "paragraphs": [
+            "Sou um desenvolvedor Full-Stack atualmente morando em Curitiba, formado em Direito e, no momento, cursando Engenharia de Software na UNINTER.",
+            "Aprendi o básico de lógica e desenvolvimento web lááá em 2012, mas entrei realmente de cabeça no mundo da programação no início de 2021, quando vi a necessidade de um programa para automatizar os trabalhos de prática jurídica da faculdade!",
+            "Desde então, venho aprimorando minhas habilidades nessa área que tanto amo, sempre aprendendo novas tecnologias e testando meus conhecimentos!"
+        ]
+    }
+}
