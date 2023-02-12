@@ -50,6 +50,7 @@
     --main-color: #324de6;
     --background: #121216;
     --background-secondary: #1a1a1d;
+    --background-tertiary: #242424;
     --text-primary: #d6d6dc;
     --text-secondary: #a7a7a7;
     --light-border: #d6d6dc3f;
@@ -68,6 +69,23 @@
     color: var(--text-primary);
     overflow: hidden;
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #1a1a1d;
+}
+  
+::-webkit-scrollbar-track {
+    background-color: #1a1a1d;
+    -webkit-border-radius: 10px;
+}
+  
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background-color: rgb(68, 68, 68); 
+}
+  
 
 body {
     font-family: "roboto", sans-serif;
@@ -123,8 +141,15 @@ h3 {
     font-size: var(--medium);
 }
 
-article {
+article,
+footer {
     padding: var(--very-big) 0; 
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .image {
@@ -189,6 +214,11 @@ article {
     display: flex;
     gap: var(--sub-big);
     align-items: center;
+}
+
+.presentation {
+    position: relative;
+    background-image: url('../images/pattern.png');
 }
 
 .hero {
@@ -271,6 +301,7 @@ article {
     position: absolute;
     cursor: pointer;
     font-size: var(--medium);
+    font-weight: bolder;
 }
 
 .project:hover .project-title {
