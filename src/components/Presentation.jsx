@@ -40,7 +40,7 @@ export default function Presentation() {
                         className="btn"
                         startIcon={<DescriptionOutlinedIcon />}
                     >
-                        My Curriculum
+                        Curriculum
                     </Button>
                 </div>
                 <Divider hideMobile={true}/>

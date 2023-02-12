@@ -1,12 +1,13 @@
 export default function ProjectThumb(props) {
+    const styles = {
+        backgroundImage: `url(${props.img})`
+    }
+
     return (
-        <article>
-            <div>
-                <img src={props.img} alt="Project thumbnail" />
+        <div className="project" style={styles}>
+            <div className="project-title">
+                <p>{ props.children }</p>
             </div>
-            <div>
-                <p>{ props.title }</p>
-            </div>
-        </article>
+        </div>
     )
 }

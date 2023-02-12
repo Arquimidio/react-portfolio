@@ -9,7 +9,10 @@ export default function Home() {
             <Presentation />
             <About />
             <TechStack />
-            <Projects />
+
+            <div className="light-bg">
+                <Projects />
+            </div>
         </section>
     )
 }
