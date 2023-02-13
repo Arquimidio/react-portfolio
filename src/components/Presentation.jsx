@@ -11,8 +11,8 @@ export default function Presentation() {
     const ROLES = [
         'Web Developer!',
         'Software Engineer!',
-        'Front-end!',
-        'Back-end!'
+        'Front-end dev!',
+        'Back-end dev!'
     ]
 
     return (

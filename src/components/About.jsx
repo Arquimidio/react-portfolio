@@ -22,15 +22,7 @@ export default function About() {
                         Since then, i've been improving my software development skills, always learning new technologies and testing my knowledge!
                     </p>
                     <div className="flex-side">
-                        <Button 
-                            href="mailto:gabrielstoppadossantos@gmail.com"
-                            className="btn"
-                            variant="contained"
-                            startIcon={<HandshakeIcon />}
-                        >
-                            Let's Work Together
-                        </Button>
-                        <Button variant="outlined" className="btn" startIcon={<GitHubIcon />}>
+                        <Button variant="contained" className="btn" startIcon={<GitHubIcon />}>
                             More
                         </Button>
                     </div>
