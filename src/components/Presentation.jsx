@@ -17,11 +17,10 @@ export default function Presentation() {
 
     return (
         <div className="presentation">
-            <div className="hero responsive-grid container">
+            <div className="hero bg-squares responsive-grid container">
                 <article className="flex-adapt">
                     <h2 className="presentation-name">
                         Hello, i'm Gabriel Stoppa
-                        <span className="wave">👋</span>
                     </h2>
                     <RoleWriter roles={ROLES}/>
                     <p className="text-secondary">
@@ -34,7 +33,7 @@ export default function Presentation() {
                             className="btn"
                             variant="contained" 
                             startIcon={<EmailIcon />}
-                            href="https://www.google.com"
+                            href="mailto:gabrielstoppadossantos@gmail.com"
                         >
                             Contact Me
                         </Button>

@@ -218,12 +218,25 @@ footer {
 
 .presentation {
     position: relative;
-    background-image: url('../images/pattern.png');
 }
 
 .hero {
     padding: var(--very-big) 0;
+    position: relative;
 }
+
+.bg-squares::after {
+    content: "";
+    height: 200px;
+    width: 100px;
+    background-image: url('../images//bg-squares.png');
+    position: absolute;
+    z-index: 0;
+    opacity: 0.2;
+    top: 0;
+    right: 0;
+}
+
 
 .role {
     display: flex;
@@ -237,6 +250,7 @@ footer {
 }
 
 .moving-hero {
+    z-index: 1;
     order: -1;
 }
 
@@ -276,7 +290,7 @@ footer {
 
 .project-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: var(--big);
 }
 
@@ -315,13 +329,15 @@ footer {
 .responsive-grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 0.5fr 1fr;
+    gap: 1rem;
     justify-content: center;
     align-items: center;
 }
 
 .flex-adapt {
     display: flex;
+    z-index: 10;
     flex-direction: column;
     gap: var(--big);
 }

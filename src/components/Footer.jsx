@@ -1,7 +1,7 @@
 export default function Footer() {
     return (
         <footer className="container">
-            { "Made by Gabriel Stoppa with 💙 + ☕" }
+            ©2023 Gabriel Stoppa. All rights reserved.
         </footer>
     )
 }

@@ -23,6 +23,7 @@ export default function About() {
                     </p>
                     <div className="flex-side">
                         <Button 
+                            href="mailto:gabrielstoppadossantos@gmail.com"
                             className="btn"
                             variant="contained"
                             startIcon={<HandshakeIcon />}
