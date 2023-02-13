@@ -13,7 +13,7 @@ export default function About() {
                 <div className="flex-adapt">
                     <h2 className="section-heading">About me</h2>
                     <p>
-                        I'm a Full-stack developer currently living at Curitiba (Brasil's Sillicon Valley :P), having a Bachelor of Laws degree and studying for a Software Engineer Degree ar UNINTER.
+                        I'm a Full-stack developer currently living at Curitiba (Brasil's Smart City :P), having a Bachelor of Laws degree and studying for a Software Engineer Degree ar UNINTER.
                     </p>
                     <p>
                         I know the basics of logic and web development since 2012, but i've really started to dig deep into the development world january 2021, when i saw the need for a software to automate my work at the college's law practice classes! 

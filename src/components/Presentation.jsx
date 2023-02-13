@@ -5,6 +5,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import DescriptionOutlinedIcon from '@mui/icons-material/DescriptionOutlined';
 import RoleWriter from "./RoleWriter";
 import Divider from "./Divider";
+import Links from "../objects/Links";
 
 export default function Presentation() {
     const ROLES = [
@@ -33,6 +34,7 @@ export default function Presentation() {
                             className="btn"
                             variant="contained" 
                             startIcon={<EmailIcon />}
+                            href="https://www.google.com"
                         >
                             Contact Me
                         </Button>
@@ -40,6 +42,7 @@ export default function Presentation() {
                             variant="outlined" 
                             className="btn"
                             startIcon={<DescriptionOutlinedIcon />}
+                            href={Links.curriculum}
                         >
                             Curriculum
                         </Button>

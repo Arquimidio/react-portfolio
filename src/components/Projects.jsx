@@ -4,6 +4,7 @@ import LaundreeImage from "../assets/images/laundree.jpg"
 import MarkdownImage from "../assets/images/markdown.jpg"
 import ShortlyImage from "../assets/images/shortly.png"
 import WorldImage from "../assets/images/world.png"
+import PortfolioImage from "../assets/images/portfolio.png"
 
 export default function Projects() {
     return (
@@ -15,6 +16,11 @@ export default function Projects() {
                 <li>
                     <ProjectThumb img={LaundreeImage}>
                         Laundree
+                    </ProjectThumb>
+                </li>
+                <li>
+                    <ProjectThumb img={PortfolioImage}>
+                        Portfolio
                     </ProjectThumb>
                 </li>
                 <li>
@@ -36,9 +42,6 @@ export default function Projects() {
                     <ProjectThumb img={WorldImage}>
                         Where in the world
                     </ProjectThumb>
-                </li>
-                <li>
-                    <ProjectThumb />
                 </li>
             </ul>
         </article>
