@@ -33,12 +33,14 @@
         font-weight: bolder;
     }
     
-    
-    
     .time-info + .time-info {
         margin-left: var(--base);
     }
-    
+
+    .contact-container {
+        order: initial;
+    }
+ 
     .adaptable-navigation {
         display: flex;
         justify-content: space-between;
@@ -75,4 +77,7 @@
         width: fit-content;
     }
     
+    footer {
+        grid-template: 1fr / 2fr 1fr;
+    }
 }

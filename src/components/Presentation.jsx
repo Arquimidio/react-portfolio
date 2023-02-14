@@ -6,6 +6,7 @@ import DescriptionOutlinedIcon from '@mui/icons-material/DescriptionOutlined';
 import RoleWriter from "./RoleWriter";
 import Divider from "./Divider";
 import Links from "../objects/Links";
+import CurriculumPDF from "../assets/documents/curriculum.pdf"
 
 export default function Presentation() {
     const ROLES = [
@@ -41,7 +42,8 @@ export default function Presentation() {
                             variant="outlined" 
                             className="btn"
                             startIcon={<DescriptionOutlinedIcon />}
-                            href={Links.curriculum}
+                            href={CurriculumPDF}
+                            target="_blank"
                         >
                             Curriculum
                         </Button>
