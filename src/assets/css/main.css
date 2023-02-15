@@ -157,6 +157,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .image > * {
@@ -203,6 +204,7 @@ footer {
     background-color: var(--background-secondary);
     font-size: var(--base);
     z-index: 10000;
+    border-bottom: 5px solid var(--background-tertiary);
 }
 
 .navbar > .container {

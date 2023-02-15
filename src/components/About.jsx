@@ -1,7 +1,6 @@
 import AboutGuy from "../assets/images/about-guy.png";
 import { Button } from "@mui/material";
 import GitHubIcon from '@mui/icons-material/GitHub';
-import HandshakeIcon from '@mui/icons-material/Handshake';
 import Links from "../objects/Links"
 import { motion } from "framer-motion"
 
