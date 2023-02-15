@@ -1,8 +1,9 @@
 * {
     box-sizing: border-box;
-    line-height: 130%;
+    line-height: 130%; 
     scroll-behavior: smooth;
 }
+
 
 @keyframes border-flash {
     0% {
@@ -447,6 +448,10 @@ footer {
     align-items: center;
     flex-wrap: wrap;
     gap: var(--small);
+}
+
+.no-overflow{
+    overflow: hidden;
 }
 
 

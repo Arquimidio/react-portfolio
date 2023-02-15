@@ -5,8 +5,8 @@ import EmailIcon from '@mui/icons-material/Email';
 import DescriptionOutlinedIcon from '@mui/icons-material/DescriptionOutlined';
 import RoleWriter from "./RoleWriter";
 import Divider from "./Divider";
-import Links from "../objects/Links";
 import CurriculumPDF from "../assets/documents/curriculum.pdf"
+import { motion } from "framer-motion"
 
 export default function Presentation() {
     const ROLES = [
@@ -19,7 +19,15 @@ export default function Presentation() {
     return (
         <div className="presentation">
             <div className="hero bg-squares responsive-grid container">
-                <article className="flex-adapt">
+                <motion.article 
+                    className="col-low-gap"
+                    initial={{ scale: 1.5 }}
+                        animate={{ scale: 1 }}
+                        transition={{
+                            duration: 2,
+                            ease: [0, 0.71, 0.2, 1.01]
+                        }}
+                >
                     <h2 className="presentation-name">
                         Hello, i'm Gabriel Stoppa
                     </h2>
@@ -49,13 +57,22 @@ export default function Presentation() {
                         </Button>
                     </div>
                     <Divider hideMobile={true}/>
-                    <div className="timer-container col-low-gap hide-on-mobile">
-                        <p>I've been coding for about</p>
-                        <TimeCounter/>
-                    </div>
-                </article>
+                        <div className="timer-container col-low-gap hide-on-mobile">
+                            <p>I've been coding for about</p>
+                            <TimeCounter/>
+                        </div>
+                </motion.article>
                 <div className="moving-hero image">
-                    <img src={HeroGuy} alt="" />
+                    <motion.img 
+                        src={HeroGuy} 
+                        alt="" 
+                        initial={{ scale: 0 }}
+                        animate={{ scale: 1 }}
+                        transition={{
+                            duration: 2,
+                            ease: [0, 0.71, 0.2, 1.01]
+                        }}
+                    />
                 </div>
             </div>
         </div>

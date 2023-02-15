@@ -13,7 +13,7 @@ export default function TechStack() {
     return (
         <article id="skills" className="container flex-adapt">
             <h2 className="section-heading">Tech Stack</h2>
-            <ul className="tech-stack">
+            <ul className="tech-stack no-overflow">
                 <li>
                     <Skill icon={HTMLIcon}>HTML</Skill>
                 </li>

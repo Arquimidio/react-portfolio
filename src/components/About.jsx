@@ -3,15 +3,25 @@ import { Button } from "@mui/material";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import HandshakeIcon from '@mui/icons-material/Handshake';
 import Links from "../objects/Links"
+import { motion } from "framer-motion"
 
 export default function About() {
     return (
         <div id="about" className="light-bg flex-side">
             <article className="responsive-grid container">
                 <div className="image">
-                    <img src={AboutGuy} alt="" />
+                    <motion.img 
+                        src={AboutGuy} 
+                        alt="" 
+                        initial={{ opacity: 0, y: 100 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                    />
                 </div>
-                <div className="col-low-gap">
+                <motion.div 
+                    className="col-low-gap"
+                    initial={{ opacity: 0, y: -100 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                >
                     <h2 className="section-heading">About me</h2>
                     <p>
                         I'm a Full-stack developer currently living at Curitiba (Brasil's Smart City :P), having a Bachelor of Laws degree and studying for a Software Engineer Degree ar UNINTER.
@@ -33,7 +43,7 @@ export default function About() {
                             More
                         </Button>
                     </div>
-                </div>
+                </motion.div>
             </article>
         </div>
     )
