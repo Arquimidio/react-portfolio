@@ -2,15 +2,16 @@ import AboutGuy from "../assets/images/about-guy.png";
 import { Button } from "@mui/material";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import HandshakeIcon from '@mui/icons-material/Handshake';
+import Links from "../objects/Links"
 
 export default function About() {
     return (
-        <div className="light-bg flex-side">
+        <div id="about" className="light-bg flex-side">
             <article className="responsive-grid container">
                 <div className="image">
                     <img src={AboutGuy} alt="" />
                 </div>
-                <div className="flex-adapt">
+                <div className="col-low-gap">
                     <h2 className="section-heading">About me</h2>
                     <p>
                         I'm a Full-stack developer currently living at Curitiba (Brasil's Smart City :P), having a Bachelor of Laws degree and studying for a Software Engineer Degree ar UNINTER.
@@ -22,7 +23,13 @@ export default function About() {
                         Since then, i've been improving my software development skills, always learning new technologies and testing my knowledge!
                     </p>
                     <div className="flex-side">
-                        <Button variant="contained" className="btn" startIcon={<GitHubIcon />}>
+                        <Button 
+                            variant="contained" 
+                            className="btn" 
+                            startIcon={<GitHubIcon />}
+                            href={Links.github}
+                            target="_blank"
+                        >
                             More
                         </Button>
                     </div>

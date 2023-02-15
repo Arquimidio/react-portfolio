@@ -11,7 +11,7 @@ import SQLITEIcon from "../assets/icons/sqlite.svg"
 
 export default function TechStack() {
     return (
-        <article className="container flex-adapt">
+        <article id="skills" className="container flex-adapt">
             <h2 className="section-heading">Tech Stack</h2>
             <ul className="tech-stack">
                 <li>

@@ -1,17 +1,17 @@
 import Navbar from "./components/Navbar"
-import Home from "./pages/Home"
 import Footer from "./components/Footer"
+import { Outlet } from "react-router"
 
-function App() {
+function Root() {
   return (
     <>
       <Navbar />
       <main>
-        <Home />
+        <Outlet />
       </main>
       <Footer />
     </>
   )
 }
 
-export default App
+export default Root;

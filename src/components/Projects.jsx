@@ -8,7 +8,7 @@ import PortfolioImage from "../assets/images/portfolio.png"
 
 export default function Projects() {
     return (
-        <article className="container flex-adapt">
+        <article id="projects" className="container flex-adapt">
             <h2 className="section-heading">
                 Projects
             </h2>
