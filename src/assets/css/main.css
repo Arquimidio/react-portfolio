@@ -344,6 +344,17 @@ footer {
     order: -1;
 }
 
+.edu-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.edu-text {
+    display: flex;
+    flex-direction: column;
+    gap: var(--base);
+}
+
 .adaptable-navigation {
     display: none;
 }

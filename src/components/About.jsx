@@ -12,13 +12,13 @@ export default function About() {
                     <motion.img 
                         src={AboutGuy} 
                         alt="" 
-                        initial={{ opacity: 0, y: 100 }}
+                        initial={{ opacity: 0, y: -100 }}
                         whileInView={{ opacity: 1, y: 0 }}
                     />
                 </div>
                 <motion.div 
                     className="col-low-gap"
-                    initial={{ opacity: 0, y: -100 }}
+                    initial={{ opacity: 0, y: 100 }}
                     whileInView={{ opacity: 1, y: 0 }}
                 >
                     <h2 className="section-heading">About me</h2>

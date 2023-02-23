@@ -7,10 +7,12 @@ export default function Footer() {
         <footer className="container">
             <div className="col-low-gap">
                 <Logo />
+            </div>
+            <div className="col-low-gap">
                 <Socials size="medium" />
                 <p>©2023 Gabriel Stoppa. All rights reserved.</p>
             </div>
-            <Contact />
+            
         </footer>
     )
 }

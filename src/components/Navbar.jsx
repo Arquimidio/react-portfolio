@@ -3,6 +3,7 @@ import Divider from "./Divider";
 import SegmentIcon from "@mui/icons-material/Segment"
 import { useState } from "react"
 import Logo from "./Logo"
+import NavLinks from "./Navlinks";
 
 export default function Navbar() {
     const [isMenuOpened, setIsMenuOpened] = useState(false);
@@ -18,13 +19,7 @@ export default function Navbar() {
                 <div className={
                     `adaptable-navigation ${isMenuOpened? 'opened-menu' : ''}`
                 }>
-                    <ul className="nav-links">
-                        <a href="#about">About</a>
-                        <a href="#skills">Skills</a>
-                        <a href="#projects">Projects</a>
-                        <a href="#">Readings</a>
-                        <a href="#">Posts</a>
-                    </ul>
+                    <NavLinks />
                     <Divider />
                     <Socials />
                 </div>
