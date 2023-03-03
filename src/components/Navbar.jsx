@@ -3,7 +3,7 @@ import Divider from "./Divider";
 import SegmentIcon from "@mui/icons-material/Segment"
 import { useState } from "react"
 import Logo from "./Logo"
-import NavLinks from "./Navlinks";
+import NavLinks from "./NavLinks.jsx";
 
 export default function Navbar() {
     const [isMenuOpened, setIsMenuOpened] = useState(false);
