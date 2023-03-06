@@ -1,45 +1,34 @@
 import logoPositivo from '../assets/images/positivo.png';
 import logoUninter from '../assets/images/uninter.png';
 import logoFrontendMasters from '../assets/images/masters.png';
+import EducationCard from './EducationCard';
 
 export default function Education() {
     return (
-    <div className='very-light-bg'>
+    <div id='education' className='very-light-bg'>
         <article className="container flex-adapt">
             <h2 className="section-heading">
                 Education
             </h2>
             <div className="education-content flex-adapt">
-                <div className="edu-container light-bg">
-                    <div className="edu-logo image">
-                        <img src={logoUninter} alt="" />
-                    </div>
-                    <div className="edu-text">
-                        <p>2023 - now</p>
-                        <h3>Uninter</h3>
-                        <p>Software Engineer</p>
-                    </div>
-                </div>
-                <div className="edu-container light-bg">
-                    <div className="edu-logo image">
-                        <img src={logoFrontendMasters} alt="" />
-                    </div>
-                    <div className="edu-text">
-                        <p>2022 - now</p>
-                        <h3>Frontend Masters</h3>
-                        <p>Web Developer</p>
-                    </div>
-                </div>
-                <div className="edu-container light-bg">
-                    <div className="edu-logo image">
-                        <img src={logoPositivo} alt="" />
-                    </div>
-                    <div className="edu-text">
-                        <div>2017 - 2022</div>
-                        <h3>Universidade Positivo</h3>
-                        <p>Bachelor of Laws</p>
-                    </div>
-                </div>
+                <EducationCard 
+                    logo={logoUninter}
+                    interval="2023 - 2027"
+                    place="Uninter"
+                    role="Software Engineer"
+                />
+                <EducationCard 
+                    logo={logoFrontendMasters}
+                    interval="2022 - now"
+                    place="Frontend Masters"
+                    role="Front-End Developer"
+                />
+                <EducationCard 
+                    logo={logoPositivo}
+                    interval="2017 - 2022"
+                    place="Universidade Positivo"
+                    role="Bachelor of Laws"
+                />
             </div>
         </article>
     </div>

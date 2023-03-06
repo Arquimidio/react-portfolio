@@ -25,8 +25,7 @@ export default function Presentation() {
                     <RoleWriter roles={ROLES}/>
                     <p className="text-secondary">
                         Welcome to my portfolio site! Here you can find all the info you
-                        need about my professional developer life, projects, hobbies, technical
-                        readings and a lot of what makes me who i am!
+                        need about my professional developer life, projects, hobbies and a lot of what makes me who i am!
                     </p>
                     <div className="flex-side">
                         <Button 

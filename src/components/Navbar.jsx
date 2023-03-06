@@ -21,7 +21,7 @@ export default function Navbar() {
                 }>
                     <NavLinks />
                     <Divider />
-                    <Socials />
+                    <Socials size="medium"/>
                 </div>
                 <div 
                     className={
